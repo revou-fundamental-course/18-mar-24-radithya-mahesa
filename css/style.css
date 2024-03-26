@@ -262,8 +262,8 @@ option:not(:first-of-type) {
     font-size: 2rem;
 
     color: #000;
-    background-color: rgb(232, 239, 246);
-    height: 82px;
+    background-color: rgba(232, 239, 246, 0.919);
+    height: 80px;
 
     align-items: center;
     justify-content: center;
