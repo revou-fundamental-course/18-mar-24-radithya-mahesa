@@ -9,7 +9,9 @@
 <body>
     <header class="header-container">
         <section class="logo-icon">
-
+            <div class="logo-title">
+                <p>Visit Indonesia</p>
+            </div>
         </section>
         <section class="nav-container">
             <button>Home</button>
@@ -20,23 +22,35 @@
     <hr>
     <section class="section-container">
         <header>
-            <h1>Hi "<span id="name">User</span>"! <br> Welcome to Radith's Travel Agent's</h1>
+            <h1>Hi "<span id="name">User</span>"! <br> Welcome to Visit Indonesia</h1>
             <p1>Your happiness is our happiness</p1>
         </header>
 
-        <div class="section-content-container">
+        <div id="home" class="section-content-container">
 
-            <div class="left-content">
+            <article class="left-content">
                 <img class="left-content-img" src="assets/2.jpg" alt="">
                 <div class="personal-detail-content">
                      <figcaption><i>"Liburan menjadi menyenangkan bersama Travel Agentku"</i></figcaption>
-                     <div class="left-profile-icon">
+                     <!-- <div class="left-profile-icon">
                         <div class="left-profile-icon-description">
                             <h1>Slamet Riyadi</h1>
                             <p>Rekayasa Peembudidayaan Lele (RPL), 16</p>                            
                         </div>
+                    </div> -->
+                    <div class="left-feature-content">
+                        <div class="circle-list-content">
+                            <div class="left-profile-icon-description">
+                              <div class="left-profile-icon"></div>
+                              <div class="feature-content">
+                                <span style="font-size: 1.2rem;"><b>Slamet Riyadi</b></span><br>
+                                Rekayasa Pembudidayaan Lele
+                              </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <hr>
                 <div class="left-feature-content">
                     <header>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, beatae itaque! Blanditiis, dolore dolorum dolor explicabo ratione ipsam et totam.</h4>                       
@@ -56,9 +70,9 @@
                         </div>
                       </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="right-content">
+            <article class="right-content">
                 <div class="right-content-description">
                     <h1>Contact Us</h1>
                     <p>Sales akan menghubungi anda 1x24jam setelah data kami terima.</p>
@@ -79,11 +93,50 @@
                     <button type="button" class="input-btn">Send</button><br>
                 </div>
                 
-            </div>
-
+            </article>
         </div>
 
     </section>
-    <script src="js/scripts.js"></script>
+
+    <section id="our-package" class="section-package">
+        <div id="our-packages" class="section-package">
+            <header>
+                <h1>our package</h1>
+            </header>
+        </div>
+    </section>
+
+    <section class="section-card-container">
+        <div class="top-row">
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>This is the content of card 1.</p>
+            </div>
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>This is the content of card 2.</p>
+            </div>
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>This is the content of card 3.</p>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <div class="card">
+                <h2>Card 4</h2>
+                <p>This is the content of card 4.</p>
+            </div>
+            <div class="card">
+                <h2>Card 5</h2>
+                <p>This is the content of card 5.</p>
+            </div>
+            <div class="card">
+                <h2>Card 6</h2>
+                <p>This is the content of card 6.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
