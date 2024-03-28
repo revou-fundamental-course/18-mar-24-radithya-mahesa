@@ -384,7 +384,7 @@ option:not(:first-of-type) {
     .footer-container h3 {
       font-family: 'Courier New', Courie, monospace; 
       margin-bottom: 2.5rem; 
-      font-size: 12vh;
+      font-size: 3vh;
     }
 }
 
