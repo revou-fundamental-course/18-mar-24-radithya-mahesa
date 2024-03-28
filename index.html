@@ -14,10 +14,25 @@
             <p>Visit Indonesia</p>
         </div>
         <section class="nav-container">
-            <button>Home</button>
-            <button>Our Pages</button>
-            <button>Call Us</button>
-        </section>
+            <ul>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#our-package">
+                        Our Pages
+                    </a>
+                </li>
+                <li>
+                    <a href="#call-us">
+                        Call Us
+                    </a>
+                </li>
+            </ul>
+        </section>        
+        
     </header>
     <hr>
     <section class="section-container">
@@ -29,22 +44,23 @@
         <div id="home" class="section-content-container">
 
             <article class="left-content">
-                <img class="left-content-img" src="assets/2.jpg" alt="">
+                <div class="slide-show">
+                    <img class="left-content-img" src="assets/2.jpg" alt="slide">
+                    <img class="left-content-img" src="assets/3.jpg " alt="slide">
+                    <img class="left-content-img" src="assets/4.jpg " alt="slide">
+
+                    <button class="slide-btn" onclick="nextSlide(1)"><b>Next Slide</b></button>
+                </div>
+                
                 <div class="personal-detail-content">
                      <figcaption><i>"Liburan menjadi menyenangkan bersama Travel Agentku"</i></figcaption>
-                     <!-- <div class="left-profile-icon">
-                        <div class="left-profile-icon-description">
-                            <h1>Slamet Riyadi</h1>
-                            <p>Rekayasa Peembudidayaan Lele (RPL), 16</p>                            
-                        </div>
-                    </div> -->
-                    <div class="left-feature-content">
+                    <div class="profile-content">
                         <div class="circle-list-content">
                             <div class="left-profile-icon-description">
                               <div class="left-profile-icon"></div>
                               <div class="feature-content">
-                                <span style="font-size: 1.2rem;"><b>Slamet Riyadi</b></span><br>
-                                Rekayasa Pembudidayaan Lele
+                                <span style="font-size: 1.2rem;"><b>Radithya Mahesa</b></span><br>
+                                Rekayasa Pembudidayaan Lele (RPL)
                               </div>
                             </div>
                         </div>
@@ -77,21 +93,6 @@
                     <h1>Contact Us</h1>
                     <p>Sales akan menghubungi anda 1x24jam setelah data kami terima.</p>
                 </div>
-                <!-- <form class="form-container" onsubmit="return validateForm()">
-                    <label>Your name:</label><br>
-                    <input type="text" class="name-input" placeholder="First and last name"><br>
-
-                    <label>Email Adress:</label><br>
-                    <input type="email" class="email-input" placeholder="example@email.com"><br>
-                    <label>What are you interested in?</label><br>
-                    <select class="select-input">
-                        <option value="" disabled selected>Select your option</option>
-                        <option value="I">Lorem, ipsum.</option>
-                        <option value="II">Lorem, ipsum.</option>
-                        <option value="II">Lorem, ipsum.</option>
-                    </select><br>
-                    <button type="button" class="input-btn">Send</button><br>
-                </form> -->
                 <form class="form-container" onsubmit="return validateForm()">
                     <label>Your name:</label><br>
                     <input type="text" class="name-input" placeholder="First and last name" name="name-input">                
@@ -106,7 +107,7 @@
                     </select>
                     <div id="warning-message" style="color: red; display: none;">Tidak boleh ada kolom yang kosong!</div><br>
                 
-                    <button type="submit" class="input-btn">Send</button><br>
+                    <button type="submit" class="input-btn"><b>Send</b></button><br>
                 </form>
             </article>
         </div>
@@ -116,7 +117,7 @@
     <section id="our-package" class="section-package">
         <div id="our-packages" class="section-package">
             <header>
-                <h1>our package</h1>
+                <h2 style="font-size: 2rem;">our package</h1>
             </header>
         </div>
     </section>
@@ -124,33 +125,82 @@
     <section class="section-card-container">
         <div class="top-row">
             <div class="card">
-                <h2>Card 1</h2>
-                <p>This is the content of card 1.</p>
+                <img src="assets/2.jpg" class="card-img">
+                <h2>tangkuban perahu stratovolcano</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
             </div>
             <div class="card">
-                <h2>Card 2</h2>
-                <p>This is the content of card 2.</p>
+                <img src="assets/3.jpg" class="card-img">
+                <h2>raja ampat islands</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
             </div>
             <div class="card">
-                <h2>Card 3</h2>
-                <p>This is the content of card 3.</p>
+                <img src="assets/4.jpg" class="card-img">
+                <h2>komodo national park</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
             </div>
         </div>
         <div class="bottom-row">
             <div class="card">
-                <h2>Card 4</h2>
-                <p>This is the content of card 4</p>
+                <img src="assets/5.jpg" class="card-img">
+                <h2>mount merbabu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
             </div>
             <div class="card">
-                <h2>Card 5</h2>
-                <p>This is the content of card 5</p>
+                <img src="assets/6.jpg" class="card-img">
+                <h2>lake toba</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
             </div>
             <div class="card">
-                <h2>Card 6</h2>
-                <p>This is the content of card 6</p>
+                <img src="assets/7.jpg" class="card-img">
+                <h2>bunaken marine park</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
             </div>
         </div>
     </section>
+    <hr style="margin: 0 5rem;">
+
+    <section class="end-section-container" id="call-us">
+        <header class="close-headline">
+            <h2>About Us</h2>
+        </header>
+        <div class="close-headline-title">
+            <table>
+                <tr>
+                    <td>
+                        <b>Alamat </b> Jl. Lorem Ipsum No 221, Kab. Dolor sit amet, Kec. Adipising elit, Kota Bandung, Jawa Barat
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Telepon </b> (022) 5245532
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Provinsi </b> Jawa barat</td>
+                </tr>
+            </table>
+            <div>
+                <a href="#" style="
+                    outline: none;
+                    text-decoration: none;">
+                    <button class="about-btn">
+                        <b>LinkedIn</b>
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <p style="font-family: 'Courier New', Courier, monospace; margin-bottom: 2.5rem; font-size: 3vh;"><b>Visit Indonesia</b></p>
+        <div class="link-footer">
+            <a href="#">Term of service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p style="color: #ddd;">&#169;2024, Radithya Mahesa</p>
+    </footer>
     
     <script src="js/script.js"></script>
 </body>
