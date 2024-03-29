@@ -14,7 +14,7 @@ function validateForm() {
         document.getElementById('warning-message').style.display = 'block';
         return false;
     }
-    
+    alert("Data anda sudah berhasil masuk!");
     console.log('Nama:', name);
     console.log('Email:', email);
     console.log('Pilihan:', selectOption);
